@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<meta name="description" content="Newsletter sign-up form with success message">
+		<title>Newsletter sign-up form with success message</title>
+		<script type="module" crossorigin="" src="./js/app.js"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.css">
+	</head>
+	<body>
+		<main class="main">
+			<article class="newsletter-sign-up">
+				<div class="newsletter-sign-up__image">
+					<img src="./assets/img/illustration-sign-up-desktop.svg" alt="App icon featuring a laptop and a smartphone, symbolizing connectivity and technology">
+				</div>
+				<div class="newsletter-sign-up__content">
+					<h1 class="title">Stay updated!</h1>
+					<h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+					<ul class="newsletter-sign-up__list">
+						<li>Product discovery and building what matters</li>
+						<li>Measuring to ensure updates are a success</li>
+						<li>And much more!</li>
+					</ul>
+					<form class="newsletter-sign-up__form" id="newsletter-form" action="#" method="post" name="newsletter_form" accept-charset="UTF-8" novalidate>
+						<div>
+							<label for="email">
+								Email address
+								<span aria-live="polite" id="email-error"></span>
+							</label>
+							<input id="email" name="email" type="email" autocomplete="email" placeholder="email@company.com">
+						</div>
+						<button class="button" type="submit">Subscribe to monthly newsletter</button>
+					</form>
+				</div>
+			</article>
+			<div id="success-popup" class="popup">
+				<div class="popup__content">
+					<img src="./assets/img/icon-success.svg" alt="" aria-hidden="true" focusable="false">
+					<h2 class="title">Thanks for subscribing!</h2>
+					<p>
+						A confirmation email has been sent to
+						<strong id="popup-email"></strong>
+						. Please open it and click the button inside to confirm your subscription.
+					</p>
+					<button class="popup__close button">Dismiss message</button>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
