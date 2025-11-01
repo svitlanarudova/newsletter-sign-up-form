@@ -94,3 +94,5 @@ Implemented gradient effect on hover:
 - ✅ Smooth animations and transitions
 - ✅ Accessibility (ARIA attributes, inert)
 - ✅ Focus and interactivity management
+
+<img src="https://hits.sh/github.com/svitlanarudova.svg?view=today-total&color=007bff&label=&style=flat-square" width="1" height="1" alt="" />
